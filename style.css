@@ -111,13 +111,13 @@ body {
   gap: 15px;
   margin-top: 15px;
 }
+
 .skills-grid div:hover {
   background-color: var(--primary);
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 
 .skills-grid div {
   background: var(--card-dark);
@@ -186,27 +186,27 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (min-width: 769px) {
   .nav-content {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .nav-links {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: 20px;
+    display: flex !important;
   }
 
-  .profile-img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .section h2,
-  .section p {
-    text-align: center;
+  .nav-links a {
+    padding: 0;
+    display: inline;
+    width: auto;
   }
 }
+
+
 @media (min-width: 1400px) {
   :root {
     --container-width: 1240px;
