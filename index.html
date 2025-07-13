@@ -11,7 +11,8 @@
   <nav class="navbar">
     <div class="container nav-content">
       <h1 class="logo">Andika<span>Dev</span></h1>
-      <ul class="nav-links">
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">Tentang</a></li>
         <li><a href="#skills">Keahlian</a></li>
         <li><a href="#projects">Proyek</a></li>
@@ -22,59 +23,66 @@
 
   <header class="hero">
     <div class="container center">
-      <img src="assets/profile.jpg" alt="Foto Profil" class="profile-img" />
+      <img src="assets/pp.jpg" alt="Foto Profil" class="profile-img" />
       <h2>Andika Yudha Pratama</h2>
-      <p>Web Developer | PHP, Laravel, Vue.js</p>
+      <p>Web Developer</p>
     </div>
   </header>
 
-  <section id="about" class="container section">
-    <h2>Tentang Saya</h2>
-    <p>Saya adalah web developer yang berpengalaman membangun berbagai website modern berbasis PHP dan JavaScript. Terampil membuat sistem top-up game, penyewaan online, CRUD, dan dashboard admin menggunakan Laravel dan Vue.js. Saya terbiasa bekerja secara mandiri maupun dalam tim.</p>
-  </section>
+  <main>
+    <section id="about" class="container section">
+      <h2>Tentang Saya</h2>
+      <p>Hai! Saya Andika seorang web developer yang suka membangun website yang rapi, cepat, dan mudah digunakan. Saya terbiasa menggunakan HTML, CSS, Espress,vue dan PHP, serta senang mengerjakan proyek dari awal sampai jadi. Portofolio ini berisi beberapa hasil kerja saya—silakan cek!.</p>
+    </section>
 
-  <section id="skills" class="container section">
-    <h2>Keahlian</h2>
-    <div class="skills-grid">
-      <div>HTML & CSS</div>
-      <div>JavaScript</div>
-      <div>PHP & Laravel</div>
-      <div>Vue.js</div>
-      <div>MySQL</div>
-      <div>REST API</div>
-      <div>Git & GitHub</div>
-      <div>Responsive Design</div>
-    </div>
-  </section>
-
-  <section id="projects" class="container section">
-    <h2>Proyek</h2>
-    <div class="projects-grid">
-      <div class="card">
-        <img src="assets/project1.jpg" alt="AYP Store">
-        <h3>AYP Store</h3>
-        <p>Website top-up game dengan sistem login pengguna dan admin, serta manajemen transaksi otomatis.</p>
-        <a href="#" target="_blank" class="btn">Lihat Proyek</a>
+    <section id="skills" class="container section">
+      <h2>Keahlian</h2>
+      <div class="skills-grid">
+        <div>HTML & CSS</div>
+        <div>Espress.js</div>
+        <div>PHP & Laravel</div>
+        <div>Vue.js</div>
+        <div>MySQL</div>
+        <div>REST API</div>
+        <div>Git & GitHub</div>
+        <div>Responsive Design</div>
       </div>
-      <div class="card">
-        <img src="assets/project2.jpg" alt="Sewa Lapangan">
-        <h3>Booking Futsal</h3>
-        <p>Website penyewaan lapangan online dengan fitur registrasi, login, dan panel admin Laravel.</p>
-        <a href="#" target="_blank" class="btn">Lihat Proyek</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="container section">
-    <h2>Kontak</h2>
-    <p>Email: <a href="mailto:andikayp@gmail.com">andikayp@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/andikawebdev" target="_blank">github.com/andikawebdev</a></p>
-    <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/andikawebdev</a></p>
-  </section>
+    <section id="projects" class="container section">
+      <h2>Proyek</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <img src="assets/project1.jpg" alt="AYP Store">
+          <h3>AYP Store</h3>
+          <p>Website top-up game dengan sistem login pengguna dan admin, serta manajemen transaksi otomatis.</p>
+          <a href="#" target="_blank" class="btn">Lihat Proyek</a>
+        </div>
+        <div class="card">
+          <img src="assets/Screenshot 2025-07-13 163842.png" alt="Sewa Lapangan">
+          <h3>Booking Futsal</h3>
+          <p>Website penyewaan lapangan online dengan fitur registrasi, login, dan panel admin Laravel.</p>
+          <a href="#" target="_blank" class="btn">Lihat Proyek</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:andikayp@gmail.com">andikayp@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/andikawebdev" target="_blank">github.com/andikawebdev</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/andikawebdev</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Andika Yudha Pratama. Dibuat dengan ❤️ dan semangat.</p>
+    <p>&copy; 2025 AndikaDev.</p>
   </footer>
 
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
